@@ -44,20 +44,20 @@ class Game
     puts "Welcome to THE END. Care to escape? I'll give you one chance...".cyan
     puts "All you have to do is beat the MASTERMIND!".cyan
     puts "The rules are simple:".cyan
-    puts "\nThere are two players, the Code Maker (that's me) and the Code Breaker (you)".cyan
-    puts "The Code Maker will create a security code consisting any combination of four colors from the following:".cyan
+    puts "\nThere are two players, the Code Maker (that's me) and the Code Breaker (you).".cyan
+    puts "The Code Maker will create a security code consisting of any combination of four colors from the following:".cyan
     puts "\n\t(R)ed ".red + "(G)reen ".green + "(Y)ellow ".yellow + "(B)lue ".blue + "(C)yan ".cyan + "(M)agenta".magenta
     puts "\nThe Code Breaker will have 12 attempts to discover the code...".cyan
-    puts "- After entering the code, the system will display feedback indicating whether the attempt includes:".cyan
-    puts "\t#{'•'.green} -- A guess that is in the code and in the correct position."
-    puts "\t#{'•'.red} -- A guess that is in the code and not in the correct position."
-    puts "\t#{'•'.gray} -- A guess that is not in the code."
+    puts "After entering a guess, the system will display feedback indicating whether the attempt includes a value that:\n".cyan
+    puts "\t#{'•'.green} -- is in the code and in the correct position."
+    puts "\t#{'•'.red} -- is in the code and not in the correct position."
+    puts "\t#{'•'.gray} -- is not in the code."
     puts "\nThe position of the feedback indicator does not always correspond".cyan
     puts "to the same position of the guess in the submitted code.".cyan
     puts "\nGuess wrong too many times, and you die.".cyan
-    puts "  O  O"
-    puts "\\______/"
-    puts "Press ENTER to play!".cyan
+    puts "\n\t  O  O"
+    puts "\t\\______/"
+    puts "\nPress ENTER to play!".cyan
     gets
   end
 

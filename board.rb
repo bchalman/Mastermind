@@ -54,14 +54,15 @@ class Board
   end
 
   def draw
-    puts "     Guess         Feedback"
+    puts "\n     Guess         Feedback"
     @board_rows.each do |row|
       print "|  "
       row[0].each { |char| print '•  '.colorize(char) }
       print "|  "
       row[1].each { |feedback| print feedback + '  ' }
-      print "|\n"
+      print "|"
       puts
     end
+    puts
   end
 end
